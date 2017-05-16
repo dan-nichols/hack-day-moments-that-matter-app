@@ -11,7 +11,7 @@ const Root = StackNavigator({
     Home: {screen: Home},
     Screen1: {screen: Screen1},
     Screen2: {screen: Screen2},
-})
+});
 
 export default class App extends Component {
     render () {
@@ -20,6 +20,5 @@ export default class App extends Component {
         );
     }
 }
-
 
 AppRegistry.registerComponent('FinancialFitnessApp', () => App);

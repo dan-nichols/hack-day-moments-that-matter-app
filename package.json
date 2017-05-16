@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "mocha --require react-native-mock/mock --compilers js:babel-core/register --recursive test/**/*.js",
+    "ios": "react-native run-ios"
   },
   "dependencies": {
     "react": "16.0.0-alpha.6",
@@ -14,8 +15,14 @@
   "devDependencies": {
     "babel-jest": "20.0.0",
     "babel-preset-react-native": "1.9.1",
+    "chai": "^3.5.0",
+    "enzyme": "^2.8.2",
     "jest": "20.0.0",
-    "react-test-renderer": "16.0.0-alpha.6"
+    "mocha": "^3.3.0",
+    "react-addons-test-utils": "^15.5.1",
+    "react-native-mock": "^0.3.1",
+    "react-test-renderer": "16.0.0-alpha.6",
+    "sinon": "^2.2.0"
   },
   "jest": {
     "preset": "react-native"
