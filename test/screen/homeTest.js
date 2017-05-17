@@ -11,6 +11,14 @@ import Home from './../../src/screen/Home';
 
 describe('<Home />', () => {
 
+    it('should have one text', () => {
+
+        const wrapper = shallow(<Home/>);
+
+        expect(wrapper.find('Text').length).to.equal(1);
+
+    });
+
     it('should have two buttons', () => {
 
         const wrapper = shallow(<Home/>);
