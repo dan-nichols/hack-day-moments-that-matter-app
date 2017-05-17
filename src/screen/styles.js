@@ -1,9 +1,4 @@
-import React from 'react';
-import {
-    StyleSheet
-} from 'react-native';
-
-const styles = StyleSheet.create({
+export default {
     container: {
         flex: 1,
         justifyContent: 'center',
@@ -12,15 +7,8 @@ const styles = StyleSheet.create({
     },
     welcome: {
         fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
-});
+        margin: 10
+    }
+};
 
-export default styles;
 
