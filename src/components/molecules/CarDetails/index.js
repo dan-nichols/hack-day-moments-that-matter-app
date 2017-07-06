@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {
-    StyleSheet
+    StyleSheet,
+    Alert
 } from 'react-native';
 
 
@@ -13,12 +14,26 @@ class CarDetailsComponent extends Component {
         super()
     }
 
+    editAlert() {
+        Alert.alert(
+                    'Edit Car Details',
+                    null,
+                    [
+                        {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
+                        {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+                        {text: 'OK', onPress: () => console.log('OK Pressed')},
+                    ],
+                    { cancelable: false }
+                );
+    }
+
     render () {
         // const insuredIcon = this.props.insured == 'true' ? "insured_icon.png" : "uninsured_icon.png"
-        const captionMessage = `${this.props.make} ${this.props.model} ${this.props.year}`;
+        let caption = `${this.props.make} ${this.props.model} ${this.props.year}`;
+        let title=`${this.props.name}`;
 
         return (
-
+            
             <CardItem>
                 <Tile
                     imageSrc={this.props.imagePath}
@@ -27,6 +42,7 @@ class CarDetailsComponent extends Component {
                     featured
                     caption={captionMessage}
                     captionStyle={navigationStyles.caption}
+                    onPress={this.editAlert}
                 />
             </CardItem>
         );
