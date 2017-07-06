@@ -22,6 +22,13 @@ const DATA = [
     carRego : {
         plateNumber:'AUS000',
         daysLeft:132
+    },
+    carInsurance : {
+      insurer:'SUNCORP',
+      typeOfCover:'Third Party',
+      repaymentCycle:'Yearly',
+      daysLeft:3,
+      insurerImage:require('../../img/aami-logo.jpg')
     }
   },
   {
@@ -32,6 +39,13 @@ const DATA = [
     carRego : {
         plateNumber:'USA911',
         daysLeft:7
+    },
+    carInsurance : {
+        insurer:'AAMI',
+        typeOfCover:'Comprehensive',
+        repaymentCycle:'Monthly',
+        daysLeft:27,
+        insurerImage:require('../../img/suncorp-logo.jpg')
     }
   },
 ];

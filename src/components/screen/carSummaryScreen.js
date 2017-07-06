@@ -7,6 +7,7 @@ import {
 
 import { CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
 import CarRego from "../molecules/CarRego";
+import CarInsurance from "../molecules/CarInsurance/index";
 
 class CarSummaryScreen extends Component {
 
@@ -22,10 +23,16 @@ class CarSummaryScreen extends Component {
                 </CardItem>
                 <CardItem>
                     <CarRego daysLeft={this.props.item.carRego.daysLeft}
-                             plateNumber={this.props.item.carRego.plateNumber} />
+                             plateNumber={this.props.item.carRego.plateNumber}
+                    />
                 </CardItem>
                 <CardItem>
-                    
+                    <CarInsurance insurer={this.props.item.carInsurance.insurer}
+                                  typeOfCover={this.props.item.carInsurance.typeOfCover}
+                                  repaymentCycle={this.props.item.carInsurance.repaymentCycle}
+                                  daysLeft={this.props.item.carInsurance.daysLeft}
+                                  insurerImage={this.props.item.carInsurance.insurerImage}
+                    />
                 </CardItem>
                 <CardItem>
                     <Icon name="heart" style={{ color: '#ED4A6A' }} />
