@@ -20,7 +20,9 @@ import CarSummaryScreen from "./carSummaryScreen";
 const DATA = [
     {
         id: 1,
-        text: 'Honda Civic',
+        nickname: 'Herbie',
+        make: 'Honda Civic',
+        model: 'DX',
         age: 1990,
         img: require('../../img/civic.jpg'),
         carRego : {
@@ -42,27 +44,29 @@ const DATA = [
         }
     },
     {
-        id: 2,
-        text: 'Subaru Impreza',
-        age: 2002,
-        img: require('../../img/impreza.jpg'),
-        carRego : {
-            plateNumber:'USA911',
-            daysLeft:7
-        },
-        carInsurance : {
-            insurer:'AAMI',
-            typeOfCover:'Comprehensive',
-            repaymentCycle:'Monthly',
-            daysLeft:27,
-            insurerImage:require('../../img/suncorp-logo.jpg')
-        },
-        carLoan : {
-            banker:'ANZ',
-            typeOfLoan: 'Personal Loan',
-            daysLeft:26,
-            loanImage: require('../../img/suncorp-logo.jpg'),
-        }
+      id: 2,
+      nickname: 'Tony',
+      make: 'Subaru Impreza',
+      model: 'Exel',
+      age: 2002,
+      img: require('../../img/impreza.jpg'),
+      carRego : {
+          plateNumber:'USA911',
+          daysLeft:7
+      },
+      carInsurance : {
+          insurer:'AAMI',
+          typeOfCover:'Comprehensive',
+          repaymentCycle:'Monthly',
+          daysLeft:27,
+          insurerImage:require('../../img/suncorp-logo.jpg')
+      },
+      carLoan : {
+          banker:'ANZ',
+          typeOfLoan: 'Personal Loan',
+          daysLeft:26,
+          loanImage: require('../../img/suncorp-logo.jpg'),
+      }
     },
     {
         id: 0

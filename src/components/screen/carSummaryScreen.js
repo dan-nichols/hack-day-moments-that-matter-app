@@ -9,6 +9,7 @@ import { CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
 import CarRego from "../molecules/CarRego";
 import CarInsurance from "../molecules/CarInsurance/index";
 import CarLoan from "../molecules/CarLoan/index";
+import CarDetails from "../molecules/CarDetails";
 
 class CarSummaryScreen extends Component {
 
@@ -19,12 +20,13 @@ class CarSummaryScreen extends Component {
     render () {
         return (
             <View style={styles.container}>
-                <CardItem cardBody>
-                    <Image style={{ height: 300, flex: 1 }} source={this.props.item.img} />
-                </CardItem>
                 <CardItem>
-                    <CarRego daysLeft={this.props.item.carRego.daysLeft}
-                             plateNumber={this.props.item.carRego.plateNumber}
+                    <CarDetails name={this.props.item.nickname} 
+                                imagePath={this.props.item.img} 
+                                make={this.props.item.make} 
+                                model={this.props.item.model} 
+                                year={this.props.item.year} 
+                                insured={this.props.item.insured} 
                     />
                 </CardItem>
                 <CardItem>
