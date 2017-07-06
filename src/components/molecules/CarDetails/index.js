@@ -33,14 +33,14 @@ class CarDetailsComponent extends Component {
         let title=`${this.props.name}`;
 
         return (
-            
+
             <CardItem>
                 <Tile
                     imageSrc={this.props.imagePath}
                     title={this.props.name}
                     titleStyle={navigationStyles.title}
                     featured
-                    caption={captionMessage}
+                    caption={caption}
                     captionStyle={navigationStyles.caption}
                     onPress={this.editAlert}
                 />
