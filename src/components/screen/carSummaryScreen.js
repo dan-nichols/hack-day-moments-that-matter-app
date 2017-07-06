@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import {
     StyleSheet,
     View,
-    Text
+    Image
 } from 'react-native';
+
+
+import { CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
 
 class CarSummaryScreen extends Component {
 
@@ -15,7 +18,23 @@ class CarSummaryScreen extends Component {
 
         return (
             <View style={styles.container}>
-                <Text>Test</Text>
+
+                <CardItem>
+                    <Left>
+                        <Thumbnail source={{uri: this.props.item.uri}} />
+                        <Body>
+                        <Text>{this.props.item.text}</Text>
+                        <Text note>NativeBase</Text>
+                        </Body>
+                    </Left>
+                </CardItem>
+                <CardItem cardBody>
+                    <Image style={{ height: 300, flex: 1 }} source={{uri: this.props.item.uri}} />
+                </CardItem>
+                <CardItem>
+                    <Icon name="heart" style={{ color: '#ED4A6A' }} />
+                    <Text>{this.props.item.age}</Text>
+                </CardItem>
             </View>
         )
     }

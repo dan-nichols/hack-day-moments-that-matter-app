@@ -7,16 +7,10 @@ import Home from './components/screen/home';
 import Screen1 from './components/screen/screen1';
 import Screen2 from './components/screen/screen2';
 
-const Root = StackNavigator({
-    Home: {screen: Home},
-    Screen1: {screen: Screen1},
-    Screen2: {screen: Screen2},
-});
-
 export default class App extends Component {
     render () {
         return (
-            <Root />
+            <Home />
         );
     }
 }
