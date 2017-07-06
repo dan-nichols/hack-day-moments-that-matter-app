@@ -15,16 +15,14 @@ class CarSummaryScreen extends Component {
     }
 
     render () {
-
         return (
             <View style={styles.container}>
-
+                <CardItem cardBody>
+                    <Image style={{ height: 300, flex: 1 }} source={this.props.item.img} />
+                </CardItem>
                 <CardItem>
                     <CarRego regoDaysLeft={this.props.item.regoDaysLeft}
                              rego={this.props.item.rego} />
-                </CardItem>
-                <CardItem cardBody>
-                    <Image style={{ height: 300, flex: 1 }} source={this.props.item.img} />
                 </CardItem>
                 <CardItem>
                     <Icon name="heart" style={{ color: '#ED4A6A' }} />
