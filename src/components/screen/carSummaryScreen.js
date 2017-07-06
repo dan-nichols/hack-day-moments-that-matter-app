@@ -32,8 +32,7 @@ class CarSummaryScreen extends Component {
                 </CardItem>
 
 
-                <CarRego daysLeft={this.props.item.carRego.daysLeft}
-                         plateNumber={this.props.item.carRego.plateNumber} />
+                <CarRego rego={this.props.item.carRego}/>
 
 
                 <CardItem>
