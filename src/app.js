@@ -29,7 +29,8 @@ const styles = StyleSheet.create({
         height: 23
     },
     page: {
-        backgroundColor: '#CDCBC3',
+        //backgroundColor: '#CDCBC3',
+        backgroundColor: '#F5F3F1',
         flex: 1
     }
 });

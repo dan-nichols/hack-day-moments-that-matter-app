@@ -16,7 +16,13 @@ import {
 export default CarValuation = ({valuation}) => {
 
     return (
-        <CardItem>
+        <CardItem style={{
+            borderWidth: .1,
+            borderRadius:2,
+            borderColor: '#D3D3D3',
+            shadowOffset:{  width: 1.5,  height: 1.5,  },
+            shadowColor: '#D3D3D3',
+            shadowOpacity: .5,}}>
             <TouchableOpacity title="" onPress={() => Linking.openURL("http://carsales.com.au")}  style={{flex:1}}>
                 <View style={styles.container}>
                     <View style={styles.valuation}>
@@ -44,7 +50,8 @@ const styles = {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'flex-start',
-        flexDirection: 'column'
+        flexDirection: 'column',
+
     },
     backdropView: {
         height: 25,
@@ -62,7 +69,8 @@ const styles = {
     amount: {
         fontSize: 25,
         fontWeight: 'bold',
-        flex: 0.5
+        flex: 0.5,
+        color: '#004346'
     },
     explanation: {
         fontSize: 10,

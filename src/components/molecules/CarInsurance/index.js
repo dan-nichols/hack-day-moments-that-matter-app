@@ -25,11 +25,9 @@ class CarInsurance extends Component {
                            style={{width: 75, height: 75}}
                     />
                     <Body>
-                        <Text style={{fontWeight:'bold'}}>
-                            Insurance
-                        </Text>
-                        <Text>
-                            {this.props.typeOfCover} Insurance
+                        <Text style={{fontWeight:'bold',
+                            color: '#004346'}}>
+                            You're covered!
                         </Text>
                         <Text style={{color:daysLeftColor}}>
                             ${this.props.repaymentAmount} due in {this.props.daysLeft} days

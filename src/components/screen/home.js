@@ -46,7 +46,7 @@ const DATA = [
       age: 2002,
       img: require('../../img/impreza.jpg'),
       carRego : {
-          plateNumber:'USA911',
+          plateNumber:'REX123',
           daysLeft:7
       },
       carInsurance : {

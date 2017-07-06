@@ -55,13 +55,8 @@ const styles = {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: '#F5F3F1',
 
-        borderWidth: .1,
-        borderRadius:2,
-        borderColor: '#D3D3D3',
-        shadowOffset:{  width: 1.5,  height: 1.5,  },
-        shadowColor: '#D3D3D3',
-        shadowOpacity: .5,
     },
     backdropView: {
         height: 25,
