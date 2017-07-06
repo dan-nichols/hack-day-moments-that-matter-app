@@ -6,7 +6,7 @@ import {
     Image,
 } from 'react-native';
 
-import { Thumbnail, Left, Body, Right } from 'native-base';
+import { CardItem, Thumbnail, Left, Body, Right } from 'native-base';
 
 class CarLoan extends Component {
 
@@ -19,7 +19,7 @@ class CarLoan extends Component {
         let daysLeftColor = this.props.daysLeft >= 10 ? "green" : "red";
 
         return (
-            <View style={styles.container}>
+            <CardItem style={styles.container}>
                 <Left>
                     <Image source={this.props.loanImage}
                            style={{width: 75, height: 75}}
@@ -36,17 +36,17 @@ class CarLoan extends Component {
                     </Text>
                     </Body>
                 </Left>
-            </View>
+            </CardItem>
         )
     }
 }
 
 export default CarLoan;
 
-const styles = StyleSheet.create({
+const styles = {
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center'
     }
-});
+};

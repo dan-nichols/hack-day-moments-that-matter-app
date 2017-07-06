@@ -3,6 +3,8 @@ import {
     StyleSheet
 } from 'react-native';
 
+
+import { CardItem } from 'native-base';
 import { Tile } from 'react-native-elements';
 
 class CarDetailsComponent extends Component {
@@ -16,14 +18,17 @@ class CarDetailsComponent extends Component {
         const captionMessage = `${this.props.make} ${this.props.model} ${this.props.year}`;
 
         return (
-            <Tile 
-                imageSrc={this.props.imagePath}
-                title={this.props.name}
-                titleStyle={navigationStyles.title}
-                featured
-                caption={captionMessage}
-                captionStyle={navigationStyles.caption}
-            />
+
+            <CardItem>
+                <Tile
+                    imageSrc={this.props.imagePath}
+                    title={this.props.name}
+                    titleStyle={navigationStyles.title}
+                    featured
+                    caption={captionMessage}
+                    captionStyle={navigationStyles.caption}
+                />
+            </CardItem>
         );
     }
 };

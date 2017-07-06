@@ -82,9 +82,7 @@ class Home extends Component {
                     item.id === 0 ?
                         <NewMomentCard/> :
 
-                        <Card style={{elevation: 3}}>
-                            <CarSummaryScreen item={item}/>
-                        </Card>
+                        <CarSummaryScreen item={item}/>
                 }
           />
         );
