@@ -19,7 +19,8 @@ class CarSummaryScreen extends Component {
 
             <Card style={styles.container}>
 
-                <CarDetails name={this.props.item.nickname}
+                <CarDetails id={this.props.item.id}
+                            name={this.props.item.nickname}
                             imagePath={this.props.item.img}
                             make={this.props.item.make}
                             model={this.props.item.model}

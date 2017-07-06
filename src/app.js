@@ -4,16 +4,22 @@ import {
     StyleSheet,
     View
 } from 'react-native';
+import { Provider } from 'react-redux';
 
 import Home from './components/screen/home';
+
+import configureStore from './store'
+const store = configureStore();
 
 export default class App extends Component {
     render () {
         return (
-            <View style={styles.page}>
-                <View style={styles.toolbar}/>
-                <Home/>
-            </View>
+            <Provider store={store}>
+                <View style={styles.page}>
+                    <View style={styles.toolbar}/>
+                    <Home/>
+                </View>
+            </Provider>
         );
     }
 }

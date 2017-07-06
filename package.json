@@ -13,7 +13,10 @@
     "react-native": "0.44.0",
     "react-native-elements": "^0.13.0",
     "react-native-vector-icons": "^4.2.0",
-    "react-navigation": "1.0.0-beta.11"
+    "react-navigation": "1.0.0-beta.11",
+    "react-native-prompt": "^1.0.0",
+    "react-redux":"^5.0.4",
+    "redux":"^3.6.0"
   },
   "devDependencies": {
     "@kadira/react-native-storybook": "^2.0.0",
