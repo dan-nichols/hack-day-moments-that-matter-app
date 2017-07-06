@@ -20,6 +20,7 @@ class CarSummaryScreen extends Component {
     render () {
         return (
             <View style={styles.container}>
+
                 <CardItem>
                     <CarDetails name={this.props.item.nickname} 
                                 imagePath={this.props.item.img} 
@@ -29,6 +30,12 @@ class CarSummaryScreen extends Component {
                                 insured={this.props.item.insured} 
                     />
                 </CardItem>
+
+
+                <CarRego daysLeft={this.props.item.carRego.daysLeft}
+                         plateNumber={this.props.item.carRego.plateNumber} />
+
+
                 <CardItem>
                     <CarInsurance insurer={this.props.item.carInsurance.insurer}
                                   typeOfCover={this.props.item.carInsurance.typeOfCover}
