@@ -10,9 +10,9 @@
   "dependencies": {
     "react": "16.0.0-alpha.6",
     "react-native": "0.44.0",
-    "react-navigation": "1.0.0-beta.11",
-    "suncorp-react-native-components": "0.0.1",
-    "suncorp-osp-react-components": "1.2.4"
+    "react-native-elements": "^0.13.0",
+    "react-native-vector-icons": "^4.2.0",
+    "react-navigation": "1.0.0-beta.11"
   },
   "devDependencies": {
     "@kadira/react-native-storybook": "^2.0.0",
