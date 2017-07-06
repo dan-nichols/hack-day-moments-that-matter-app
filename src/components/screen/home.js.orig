@@ -72,6 +72,13 @@ const DATA = [
 ];
 
 
+<<<<<<< Updated upstream
+const SCREEN_WIDTH = Dimensions.get('window').width;
+const SCREEN_HEIGHT = Dimensions.get('window').height;
+
+
+=======
+>>>>>>> Stashed changes
 class Home extends Component {
 
 
