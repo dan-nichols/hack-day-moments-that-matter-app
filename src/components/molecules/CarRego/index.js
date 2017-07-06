@@ -16,9 +16,9 @@ class CarRego extends Component {
 
     render () {
 
-        let daysLeftColor = this.props.regoDaysLeft >= 10 ? "green" : "red";
+        let daysLeftColor = this.props.daysLeft >= 10 ? "green" : "red";
 
-        let numberPlateUri = 'https://d1iib2ym9qsjzj.cloudfront.net/api/plate?region=AU&text='+ this.props.rego + '&ch=blue-dark&bg=euro-white&frame=1&width=1';
+        let numberPlateUri = 'https://d1iib2ym9qsjzj.cloudfront.net/api/plate?region=AU&text='+ this.props.plateNumber + '&ch=blue-dark&bg=euro-white&frame=1&width=1';
 
         return (
             <View style={styles.container}>
@@ -28,7 +28,7 @@ class CarRego extends Component {
                     />
                     <Body>
                         <Text style={{color:daysLeftColor, marginLeft:-20 }}>
-                            {this.props.regoDaysLeft} Days Remaining
+                            {this.props.daysLeft} Days Remaining
                         </Text>
                     </Body>
                 </Left>

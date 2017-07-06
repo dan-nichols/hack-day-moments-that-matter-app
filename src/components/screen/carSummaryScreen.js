@@ -21,8 +21,11 @@ class CarSummaryScreen extends Component {
                     <Image style={{ height: 300, flex: 1 }} source={this.props.item.img} />
                 </CardItem>
                 <CardItem>
-                    <CarRego regoDaysLeft={this.props.item.regoDaysLeft}
-                             rego={this.props.item.rego} />
+                    <CarRego daysLeft={this.props.item.carRego.daysLeft}
+                             plateNumber={this.props.item.carRego.plateNumber} />
+                </CardItem>
+                <CardItem>
+                    
                 </CardItem>
                 <CardItem>
                     <Icon name="heart" style={{ color: '#ED4A6A' }} />
