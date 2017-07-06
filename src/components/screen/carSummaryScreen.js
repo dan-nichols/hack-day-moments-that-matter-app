@@ -29,7 +29,7 @@ class CarSummaryScreen extends Component {
                     </Left>
                 </CardItem>
                 <CardItem cardBody>
-                    <Image style={{ height: 300, flex: 1 }} source={{uri: this.props.item.uri}} />
+                    <Image style={{ height: 300, flex: 1 }} source={this.props.item.img} />
                 </CardItem>
                 <CardItem>
                     <Icon name="heart" style={{ color: '#ED4A6A' }} />
