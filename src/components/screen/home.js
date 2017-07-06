@@ -24,12 +24,14 @@ const DATA = [
         carInsurance : {
           typeOfCover:'Third Party',
           repaymentCycle:'Yearly',
+          repaymentAmount: 516.34,
           daysLeft:3,
           insurerImage:require('../../img/aami-logo.jpg')
         },
         carLoan : {
           typeOfLoan: 'Special Car Loan',
-          daysLeft:3,
+          repaymentAmount: 46.34,
+          daysLeft:25,
           loanImage: require('../../img/suncorp-logo.jpg'),
         }
     },
@@ -47,12 +49,14 @@ const DATA = [
       carInsurance : {
           typeOfCover:'Comprehensive',
           repaymentCycle:'Monthly',
+          repaymentAmount: 36.34,
           daysLeft:27,
           insurerImage:require('../../img/suncorp-logo.jpg')
       },
       carLoan : {
           typeOfLoan: 'Personal Loan',
-          daysLeft:26,
+          daysLeft:8,
+          repaymentAmount: 136.34,
           loanImage: require('../../img/suncorp-logo.jpg'),
       }
     },
