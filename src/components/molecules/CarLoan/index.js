@@ -8,7 +8,7 @@ import {
 
 import { Thumbnail, Left, Body, Right } from 'native-base';
 
-class CarRego extends Component {
+class CarLoan extends Component {
 
     constructor () {
         super()
@@ -18,18 +18,19 @@ class CarRego extends Component {
 
         let daysLeftColor = this.props.daysLeft >= 10 ? "green" : "red";
 
-        let numberPlateUri = 'https://d1iib2ym9qsjzj.cloudfront.net/api/plate?region=AU&text='+ this.props.plateNumber + '&ch=blue-dark&bg=euro-white&frame=1&width=1';
-
         return (
             <View style={styles.container}>
                 <Left>
-                    <Image source={{ uri: numberPlateUri }}
-                           style={{ width: 75, height: 75}}
+                    <Image source={this.props.loanImage}
+                           style={{width: 75, height: 75}}
                     />
                     <Body>
-                        <Text style={{color:daysLeftColor}}>
-                            {this.props.daysLeft} Days Remaining
-                        </Text>
+                    <Text>
+                        {this.props.typeOfLoan} {this.props.banker}
+                    </Text>
+                    <Text style={{color:daysLeftColor}}>
+                        Payment due in {this.props.daysLeft} days
+                    </Text>
                     </Body>
                 </Left>
             </View>
@@ -37,7 +38,7 @@ class CarRego extends Component {
     }
 }
 
-export default CarRego;
+export default CarLoan;
 
 const styles = StyleSheet.create({
     container: {
