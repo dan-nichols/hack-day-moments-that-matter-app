@@ -4,6 +4,9 @@ import { Dimensions } from 'react-native';
 const SCREEN_HEIGHT = Dimensions.get('window').height
 
 export default {
+    container: {
+        justifyContent: 'center',
+    },
     card: {
         elevation: 3,
         height: SCREEN_HEIGHT - 30

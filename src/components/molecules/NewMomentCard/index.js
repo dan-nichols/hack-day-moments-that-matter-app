@@ -1,7 +1,6 @@
 
 import React from 'react';
 
-import { View } from 'react-native';
 import {
     Button,
     DeckSwiper,
@@ -11,18 +10,16 @@ import {
     Text,
     Left,
     Body,
-    Icon } from 'native-base';
+    View } from 'native-base';
 
 import styles from './styles';
-
-
 
 
 export default PriceDifferentialItem = ({name, amount, diff, clickAction, selected}) => {
 
     return (
         <Card style={styles.card}>
-            <View>
+            <View style={styles.container}>
                 <CardItem header>
                     <Text>What matters to you?</Text>
                 </CardItem>
