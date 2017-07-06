@@ -14,8 +14,8 @@ import CarSummaryScreen from "./carSummaryScreen";
 
 // test data
 const DATA = [
-  { id: 1, text: 'Honda Civic', age: 1990, img: require('../../img/civic.jpg') },
-  { id: 2, text: 'Subaru Impreza', age: 2002, img: require('../../img/impreza.jpg') },
+  { id: 1, text: 'Honda Civic', age: 1990, regoDaysLeft:247, rego:'MRP123', img: require('../../img/civic.jpg') },
+  { id: 2, text: 'Subaru Impreza', age: 2002, regoDaysLeft:8, rego:'PFG654', img: require('../../img/impreza.jpg') },
 ];
 
 

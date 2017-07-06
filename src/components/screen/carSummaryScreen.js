@@ -5,8 +5,8 @@ import {
     Image
 } from 'react-native';
 
-
 import { CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
+import CarRego from "../molecules/CarRego";
 
 class CarSummaryScreen extends Component {
 
@@ -20,13 +20,8 @@ class CarSummaryScreen extends Component {
             <View style={styles.container}>
 
                 <CardItem>
-                    <Left>
-                        <Thumbnail source={{uri: this.props.item.uri}} />
-                        <Body>
-                        <Text>{this.props.item.text}</Text>
-                        <Text note>NativeBase</Text>
-                        </Body>
-                    </Left>
+                    <CarRego regoDaysLeft={this.props.item.regoDaysLeft}
+                             rego={this.props.item.rego} />
                 </CardItem>
                 <CardItem cardBody>
                     <Image style={{ height: 300, flex: 1 }} source={this.props.item.img} />
@@ -39,8 +34,6 @@ class CarSummaryScreen extends Component {
         )
     }
 }
-
-CarSummaryScreen.navigationOptions = {title: 'CarSummaryScreen'};
 
 export default CarSummaryScreen;
 
