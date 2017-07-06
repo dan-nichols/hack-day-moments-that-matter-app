@@ -1,15 +1,9 @@
 import React, {Component} from 'react';
 
 import {
-    Button,
     DeckSwiper,
-    Card,
-    CardItem,
-    Thumbnail,
-    Text,
-    Left,
-    Body,
-    Icon } from 'native-base';
+    Card
+} from 'native-base';
 
 import CarSummaryScreen from "./carSummaryScreen";
 import NewMomentCard from "../molecules/NewMomentCard";
