@@ -10,9 +10,9 @@ import Home from './components/screen/home';
 export default class App extends Component {
     render () {
         return (
-            <View>
+            <View style={styles.page}>
                 <View style={styles.toolbar}/>
-                <Home />
+                <Home/>
             </View>
         );
     }
@@ -23,11 +23,13 @@ AppRegistry.registerComponent('MomentsThatMatterApp', () => App);
 
 const styles = StyleSheet.create({
     toolbar: {
-        backgroundColor: '#808080',
+        backgroundColor: '#ffcd05',
+        //backgroundColor: '#004346',
+        //backgroundColor: '#478081',
         height: 23
     },
     page: {
-        backgroundColor: '#1f1f1f',
+        backgroundColor: '#CDCBC3',
         flex: 1
     }
 });

@@ -43,6 +43,7 @@ class CarDetailsComponent extends Component {
                     caption={caption}
                     captionStyle={navigationStyles.caption}
                     onPress={this.editAlert}
+                    height={230}
                 />
             </CardItem>
         );
