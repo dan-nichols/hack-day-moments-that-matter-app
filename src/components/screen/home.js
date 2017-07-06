@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {
     Button,
+    Dimensions,
     Text,
     View,
     Alert
@@ -23,6 +24,9 @@ const DATA = [
   { id: 7, text: 'Sarah', age: 28, uri: 'https://s-media-cache-ak0.pinimg.com/736x/41/75/26/4175268906d97492e4a3175eab95c0f5.jpg' },
 ];
 
+
+const SCREEN_WIDTH = Dimensions.get('window').width;
+const SCREEN_HEIGHT = Dimensions.get('window').height
 
 
 class Home extends Component {
