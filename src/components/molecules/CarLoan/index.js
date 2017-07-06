@@ -25,6 +25,9 @@ class CarLoan extends Component {
                            style={{width: 75, height: 75}}
                     />
                     <Body>
+                    <Text style={{fontWeight:'bold'}}>
+                        Loan
+                    </Text>
                     <Text>
                         {this.props.typeOfLoan}
                     </Text>

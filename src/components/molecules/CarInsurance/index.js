@@ -25,11 +25,14 @@ class CarInsurance extends Component {
                            style={{width: 75, height: 75}}
                     />
                     <Body>
+                        <Text style={{fontWeight:'bold'}}>
+                            Insurance
+                        </Text>
                         <Text>
                             {this.props.typeOfCover} Insurance
                         </Text>
                         <Text style={{color:daysLeftColor}}>
-                            {this.props.daysLeft} Days Remaining
+                            Payment due in {this.props.daysLeft} days
                         </Text>
                     </Body>
                 </Left>
