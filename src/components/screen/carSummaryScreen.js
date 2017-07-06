@@ -26,7 +26,7 @@ class CarSummaryScreen extends Component {
                                 imagePath={this.props.item.img} 
                                 make={this.props.item.make} 
                                 model={this.props.item.model} 
-                                year={this.props.item.year} 
+                                year={this.props.item.age} 
                                 insured={this.props.item.insured} 
                     />
                 </CardItem>
