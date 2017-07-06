@@ -123,7 +123,6 @@ class Home extends Component {
 
 const styles = {
     card: {
-        height: SCREEN_HEIGHT - 30,
         elevation: 3
     },
     button: {
