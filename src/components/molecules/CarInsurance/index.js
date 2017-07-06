@@ -35,6 +35,7 @@ class CarInsurance extends Component {
                             ${this.props.repaymentAmount} due in {this.props.daysLeft} days
                         </Text>
                     </Body>
+                    <Text style={{color:'grey'}}> > </Text>
                 </Left>
             </CardItem>
         )
