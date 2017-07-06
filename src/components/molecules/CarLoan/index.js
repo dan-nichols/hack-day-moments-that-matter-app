@@ -26,7 +26,7 @@ class CarLoan extends Component {
                     />
                     <Body>
                     <Text>
-                        {this.props.typeOfLoan} {this.props.banker}
+                        {this.props.typeOfLoan}
                     </Text>
                     <Text style={{color:daysLeftColor}}>
                         Payment due in {this.props.daysLeft} days

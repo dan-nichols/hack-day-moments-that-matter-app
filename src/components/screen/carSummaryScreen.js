@@ -36,19 +36,16 @@ class CarSummaryScreen extends Component {
 
 
                 <CardItem>
-                    <CarInsurance insurer={this.props.item.carInsurance.insurer}
-                                  typeOfCover={this.props.item.carInsurance.typeOfCover}
+                    <CarInsurance typeOfCover={this.props.item.carInsurance.typeOfCover}
                                   repaymentCycle={this.props.item.carInsurance.repaymentCycle}
                                   daysLeft={this.props.item.carInsurance.daysLeft}
                                   insurerImage={this.props.item.carInsurance.insurerImage}
                     />
                 </CardItem>
                 <CardItem>
-                    <CarLoan
-                        banker={this.props.item.carLoan.banker}
-                        daysLeft={this.props.item.carLoan.daysLeft}
-                        typeOfLoan={this.props.item.carLoan.typeOfLoan}
-                        loanImage={this.props.item.carLoan.loanImage}
+                    <CarLoan daysLeft={this.props.item.carLoan.daysLeft}
+                             typeOfLoan={this.props.item.carLoan.typeOfLoan}
+                             loanImage={this.props.item.carLoan.loanImage}
                     />
                 </CardItem>
             </View>

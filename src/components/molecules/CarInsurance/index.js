@@ -26,7 +26,7 @@ class CarInsurance extends Component {
                     />
                     <Body>
                         <Text>
-                            {this.props.typeOfCover} {this.props.insurer} Insurance
+                            {this.props.typeOfCover} Insurance
                         </Text>
                         <Text style={{color:daysLeftColor}}>
                             {this.props.daysLeft} Days Remaining
