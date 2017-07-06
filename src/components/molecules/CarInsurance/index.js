@@ -48,6 +48,13 @@ const styles = {
     container: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+
+        borderWidth: .1,
+        borderRadius:2,
+        borderColor: '#D3D3D3',
+        shadowOffset:{  width: 1.5,  height: 1.5,  },
+        shadowColor: '#D3D3D3',
+        shadowOpacity: .5,
     }
 };

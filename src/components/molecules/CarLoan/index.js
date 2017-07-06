@@ -25,15 +25,15 @@ class CarLoan extends Component {
                            style={{width: 75, height: 75}}
                     />
                     <Body>
-                    <Text style={{fontWeight:'bold'}}>
-                        Loan
-                    </Text>
-                    <Text>
-                        {this.props.typeOfLoan}
-                    </Text>
-                    <Text style={{color:daysLeftColor}}>
-                        ${this.props.repaymentAmount} due in {this.props.daysLeft} days
-                    </Text>
+                        <Text style={{fontWeight:'bold'}}>
+                            Loan
+                        </Text>
+                        <Text>
+                            {this.props.typeOfLoan}
+                        </Text>
+                        <Text style={{color:daysLeftColor}}>
+                            ${this.props.repaymentAmount} due in {this.props.daysLeft} days
+                        </Text>
                     </Body>
                     <Text style={{color:'grey'}}> > </Text>
                 </Left>
@@ -48,6 +48,12 @@ const styles = {
     container: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        borderWidth: .1,
+        borderRadius:2,
+        borderColor: '#D3D3D3',
+        shadowOffset:{  width: 1.5,  height: 1.5,  },
+        shadowColor: '#D3D3D3',
+        shadowOpacity: .5,
     }
 };
