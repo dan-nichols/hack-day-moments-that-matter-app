@@ -43,10 +43,6 @@ class CarSummaryScreen extends Component {
                         loanImage={this.props.item.carLoan.loanImage}
                     />
                 </CardItem>
-                <CardItem>
-                    <Icon name="heart" style={{ color: '#ED4A6A' }} />
-                    <Text>{this.props.item.age}</Text>
-                </CardItem>
             </View>
         )
     }
