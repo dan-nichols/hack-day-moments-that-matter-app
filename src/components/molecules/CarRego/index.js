@@ -9,8 +9,10 @@ import {
     CardItem,
     Left,
     Body,
+    Button,
     Right,
-    Text
+    Text,
+    View
 } from 'native-base';
 
 
@@ -33,13 +35,13 @@ class CarRego extends Component {
             <CardItem style={styles.container}>
                 <Left>
                     <Image source={{ uri: numberPlateUri }}
-                           style={{ width: SCREEN_WIDTH, height: 75}}
-                    />
-                    <Body>
-                        <Text style={{color:daysLeftColor}}>
-                            {this.props.rego.daysLeft} Days Remaining
-                        </Text>
-                    </Body>
+                           style={{ width: SCREEN_WIDTH, height: 75, alignItems:'flex-end'}}>
+                        <View style={styles.backdropView}>
+                                <Text style={styles.headline}>
+                                    Due soon!
+                                </Text>
+                        </View>
+                    </Image>
                 </Left>
             </CardItem>
         )
@@ -53,5 +55,18 @@ const styles = {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    backdropView: {
+        height: 25,
+        width: 90,
+        backgroundColor: '#c41727',
+        marginRight: 35,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 5
+    },
+    headline: {
+        fontSize: 14,
+        color: 'white'
     }
 };
