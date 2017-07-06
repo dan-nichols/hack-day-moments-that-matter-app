@@ -33,6 +33,9 @@ const DATA = [
           repaymentAmount: 46.34,
           daysLeft:25,
           loanImage: require('../../img/suncorp-logo.jpg'),
+        },
+        valuation: {
+            amount: '$8,000'
         }
     },
     {
@@ -58,6 +61,9 @@ const DATA = [
           daysLeft:8,
           repaymentAmount: 136.34,
           loanImage: require('../../img/suncorp-logo.jpg'),
+      },
+      valuation: {
+          amount: '$15,000'
       }
     },
     {

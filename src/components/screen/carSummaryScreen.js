@@ -6,6 +6,7 @@ import CarRego from "../molecules/CarRego";
 import CarInsurance from "../molecules/CarInsurance/index";
 import CarLoan from "../molecules/CarLoan/index";
 import CarDetails from "../molecules/CarDetails";
+import CarValuation from "../molecules/CarValuation";
 
 class CarSummaryScreen extends Component {
 
@@ -27,6 +28,8 @@ class CarSummaryScreen extends Component {
 
 
                 <CarRego rego={this.props.item.carRego}/>
+
+                <CarValuation valuation={this.props.item.valuation}/>
 
                 <CarInsurance typeOfCover={this.props.item.carInsurance.typeOfCover}
                               repaymentCycle={this.props.item.carInsurance.repaymentCycle}
