@@ -30,8 +30,6 @@ class CarSummaryScreen extends Component {
 
                 <CarRego rego={this.props.item.carRego}/>
 
-                <CarValuation valuation={this.props.item.valuation}/>
-
                 <CarInsurance typeOfCover={this.props.item.carInsurance.typeOfCover}
                               repaymentCycle={this.props.item.carInsurance.repaymentCycle}
                               daysLeft={this.props.item.carInsurance.daysLeft}
@@ -42,6 +40,8 @@ class CarSummaryScreen extends Component {
                          typeOfLoan={this.props.item.carLoan.typeOfLoan}
                          loanImage={this.props.item.carLoan.loanImage}
                          repaymentAmount={this.props.item.carLoan.repaymentAmount}/>
+
+                <CarValuation valuation={this.props.item.valuation}/>
             </Card>
         )
     }

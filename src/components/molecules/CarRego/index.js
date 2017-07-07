@@ -29,7 +29,7 @@ class CarRego extends Component {
 
         let daysLeftColor = this.props.rego.daysLeft >= 10 ? "green" : "red";
 
-        let numberPlateUri = 'https://d1iib2ym9qsjzj.cloudfront.net/api/plate?region=AU&text='+ this.props.rego.plateNumber + '&ch=blue-dark&bg=euro-white&frame=1&width=1';
+        let numberPlateUri = 'https://d1iib2ym9qsjzj.cloudfront.net/api/plate?region=AU&text='+ this.props.rego.plateNumber + '&ch=white&bg=green&frame=1&width=1';
 
         return (
             <CardItem style={styles.container}>
